@@ -5,7 +5,7 @@ var parser = require('body-parser');
 var path = require('path');
 
 // Include Routes
-var home = require('./controllers/home');
+var main = require('./controllers/main');
 
 var port = 8888;
 
@@ -17,7 +17,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(parser.json());
 //app.use(parser.urlencoded({extended:false}));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', home);
+app.use('/', main);
 
 
 
