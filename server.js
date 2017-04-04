@@ -8,7 +8,7 @@ var favicon = require('serve-favicon');
 // Include Routes
 var main = require('./controllers/main');
 
-var port = 3333;
+var port = process.env.PORT || '3333';
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
