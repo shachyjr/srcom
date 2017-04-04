@@ -7,6 +7,19 @@ padding: 0;
 /*** SET DEFAULT STYLES FOR FONTS AND COLOR ***/
 body {
   color: #2E282A;
+  padding: 30px 0;
+  height: 100% !important;
+}
+
+body h1 {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  line-height: 65px;
+}
+body p {
+  font-family: 'Vollkorn', Georgia, Times, serif;
+	font-size: 16px;
+	line-height: 25px;
 }
 .header-font {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -19,7 +32,7 @@ body {
 	line-height: 25px;
 }
 
-
+/*** CONTAINERS STYLING ***/
 #main-container {
   border-width: 5px;
   border-radius: 15px;
@@ -30,46 +43,74 @@ body {
   height: 150px;
   width: 100%;
   color: white;
-  padding: 0 10%;
-  margin: 10px 0;
-
-  /*** TESTING PURPOSES ***/
-  border-style: solid;
-  border-width: 5px;
-  border-color: red;
+  padding: 15px 10%;
 }
 #main-nav ul {
   list-style-type: none;
   letter-spacing: 2px;
   font-size: 12px;
   font-weight: bolder;
+  padding: 20px 0;
 
-  /*** TESTING PURPOSES ***/
-  border-width: 1px;
-  border-color: black;
-  border-style: solid;
+  border-top-color: #EBCBC3;/*#878787;*/
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: #EBCBC3;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 #main-nav li {
-  padding: 5px;
-
-  /*** TESTING PURPOSES ***/
-  border-width: 1px;
-  border-color: green;
-  border-style: solid;
+  padding: 0 25px;
 }
 #main-nav a {
   color: #4C4C4C;
-
-  /*** TESTING PURPOSES ***/
-  border-color: black;
   text-decoration: none;
 }
 #main-nav a:hover {
   color: #EBCBC3;
-  background-color: white;
 }
 #mainlogo {
-  height: 150px;
+  height: 175px;
+}
+
+/*** UNDERCONSTRUCTION PAGE STYLING ***/
+#underConstr-partial {
+  margin-top: 35px;
+  height:100%;
+}
+#underConstr-partial #row-one {
+  width: 100%;
+}
+#underConstr-partial #row-two {
+  padding: 40px;
+}
+#underConstr-partial #row-two h1 {
+  font-size: 40px;
+  text-align: center;
+}
+#underConstr-partial #row-two #row-two-3 {
+  overflow: visible;
+  margin-top: -95px;
+}
+#underConstr-partial #row-two img {
+  width: 300px;
+  height: 300px;
+  background-color: #D61800;/*#E82700;*/
+  padding: 30px;
+  border-radius: 10px;
+  margin: 40px;
+}
+#underConstr-partial #row-three {
+  background-color: #EBCBC3;
+  color: #2E282A;
+  padding: 20px;
+  margin-top: 50px;
+
+}
+#underConstr-partial #row-three i {
+  color: white;
+  font-size: 30px;
+  padding: 10px 40px;
 }
 
 /*** HEADER STYLING ***/

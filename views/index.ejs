@@ -6,18 +6,10 @@
   <body ng-app="srCom" ng-controller="MainCtrl">
     <div id="main-container">
       <% include partials/navbar %>
-      <!--<% include partials/header %>-->
+      <% include partials/header %>
       <% include partials/underConstr %>
     </div>
-    <!-- Angular Material requires Angular.js Libraries -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-
-    <!-- Angular Material Library -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script> 
-    <script src="app.js"></script>
+    <% include partials/scripts %>
 
   </body>
 </html>
