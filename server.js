@@ -3,7 +3,7 @@ var app = express();
 
 var parser = require('body-parser');
 var path = require('path');
-var favicon = require('serve-favicon');
+//var favicon = require('serve-favicon');
 
 // Include Routes
 var main = require('./controllers/main');
@@ -18,7 +18,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(parser.json());
 //app.use(parser.urlencoded({extended:false}));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(path.join(__dirname, 'public', 'design_elements', 'logos', 'favicon.ico')));
+//app.use(favicon(path.join(__dirname, 'public', 'design_elements', 'logos', 'favicon.ico')));
 app.use('/', main);
 
 
