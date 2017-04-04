@@ -1,6 +1,6 @@
 // takes in name of module and array of modules that my app will depend on
-angular.module('srCom', ['ngMaterial'])
-.controller('MainCtrl', ['$scope', function($scope){
+var app = angular.module('srCom', ['ngMaterial'])
+app.controller('MainCtrl', ['$scope', function($scope){
   var today = new Date();
   var today_dd = today.getDate();
 
